@@ -5,3 +5,53 @@ paleta de cores
 verde: 49a09d
 lilas: 5f2c82
 */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    
+}
+html, body{
+    background-color: #5f2c82;
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: white;   
+    border-radius: 20px;
+    height: 500px;
+    width: 250px;
+}
+section#login > div#imagem{
+    background: #5f2c82 url(../imagens/login.jpg) no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+    height: 200px;
+    
+}
+div#formulario h1{
+    font-weight: bold;
+    font-size: 2em;
+    padding: 10px 10px;
+}
+div#formulario p{
+    text-align: justify;
+    padding: 2px 2px;
+
+}
+label#iemail {
+    background-color: #5f2c82;
+    border-radius: 10px;
+}

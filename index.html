@@ -4,19 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <main>
         <section id="login" >
             <div id="imagem">
-                Foto
+            
             </div>
-            <div id=" formulario">
+            <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja benvindo novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiênte</p>
             </div>
-            <form action="login.php" method="post"></form>
+            <form action="login.php" method="post">
+                <p>
+                    <label for="iemail"><span class="material-symbols-outlined">
+                        mail
+                        </span></label>
+                    <input type="email" name="email" id="iemail" required minlength="8" size="20" placeholder="seu e-mail">
+                </p>
+                <p>
+                    <label for="isenha"><span class="material-symbols-outlined">
+                        vpn_key
+                        </span></label>
+                    <input type="password" name="senha" id="isenha" required minlength="8" maxlength="16" size="20" placeholder="sua senha">
+                </p>
+                <p><input type="submit" value="Enviar"> </p>
+                <p><input type="button" value="Esquecia a senha"></p>
+            </form>
         </section>
     </main>
 </body>
