@@ -23,7 +23,7 @@ main{
     height: 100vh;
     width: 100vw;
 }
-section#login{
+section#login{   
     position: absolute;
     top: 50%;
     left: 50%;
@@ -33,20 +33,28 @@ section#login{
     border-radius: 20px;
     height: 500px;
     width: 250px;
+    text-align: center;
+    transition: width .05s, he ;
 }
 section#login > div#imagem{
+    display: block;
     background: #5f2c82 url(../imagens/login.jpg) no-repeat;
     background-size: cover;
     background-position: bottom right;
-    height: 200px;
-    
+    height: 200px;    
+}
+section#login > div#imagem{
+    padding: 10px;
+    display: block;
 }
 div#formulario h1{
+    padding: 10px ;
     font-weight: bold;
     font-size: 2em;
     padding: 10px 10px;
 }
 div#formulario p{
+
     text-align: justify;
     padding: 2px 2px;
 
