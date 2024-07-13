@@ -34,7 +34,9 @@ section#login{
     height: 500px;
     width: 250px;
     text-align: center;
-    transition: width .05s, he ;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.492);
+    transition: width .5s, heigt .5s  ;
+    transition-timing-function: ease;
 }
 section#login > div#imagem{
     display: block;
