@@ -14,36 +14,38 @@
 <body>
     <main>
         <section id="login" >
-            <div id="imagem">            
+            <div id="imagem"> 
+            <!-- aqui a imagem foi chamada via background no css-->          
             </div>
 
             <div id="formulario">
+                
                 <h1>Login</h1>
                 <p>Seja benvindo novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiênte</p>
-            </div>    
-            <form action="login.php" method="post" autocomplete="on">
-               
-                <div class="campo">                        
-                        <span class="material-symbols-outlined">
-                            person
-                            </span>
-                        <input type="email" name="email" id="iemail" autocomplete="email" required maxlength="30"  placeholder="seu e-mail">
-                        <label for="iemail">E-mail</label>
-                    </div>
-               
+                
+                <form action="login.php" method="post" autocomplete="on">
+                
                     <div class="campo">
-                        <span class="material-symbols-outlined">
-                            vpn_key
-                            </span>
-                        <input type="password" name="senha" id="isenha" autocomplete="current-password" required minlength="8" maxlength="20" placeholder="sua senha">
-                        <label for="isenha">Senha</label>
-
-                    </div>
-                <input type="submit" value="Enviar">
-                <a href="#" class="botao">Esqueci a senha <span class="material-symbols-outlined">
-                    mail
-                    </span></a>
-            </form>
+                            <span class="material-symbols-outlined">
+                                person
+                                </span>
+                            <input type="email" name="email" id="iemail" autocomplete="email" required maxlength="30"  placeholder="seu e-mail">
+                            <label for="iemail">E-mail</label>
+                        </div>
+                
+                        <div class="campo">
+                            <span class="material-symbols-outlined">
+                                vpn_key
+                                </span>
+                            <input type="password" name="senha" id="isenha" autocomplete="current-password" required minlength="8" maxlength="20" placeholder="sua senha">
+                            <label for="isenha">Senha</label>
+                        </div>
+                    <input type="submit" value="Enviar">
+                    <a href="#" class="botao">Esqueci a senha <span class="material-symbols-outlined">
+                        mail
+                        </span></a>
+                </form>
+            </div>
         </section>
     </main>
 </body>

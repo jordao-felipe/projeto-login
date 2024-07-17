@@ -10,9 +10,9 @@ lilas: 5f2c82
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    
+    font-family: "Roboto", sans-serif;    
 }
+
 html, body{
     background-color: #5f2c82;
     height: 100vh;
@@ -27,14 +27,14 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
     background-color: white;   
     border-radius: 20px;
-    height: 500px;
-    width: 250px;
-    
+    height: 520px;
+    width: 250px;    
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.492);
+
+    transform: translate(-50%, -50%);
     transition: width .5s, heigt .5s  ;
     transition-timing-function: ease;
 }
@@ -45,9 +45,13 @@ section#login > div#imagem{
     background-position: bottom right;
     height: 200px;    
 }
-div#formulario {
-  width: 95%;
-  margin: auto;  
+section#login > div#formulario {
+  display: block;
+  padding: 10px;
+   
+}
+div#formulario p{
+    font-size: 0.8em;
 }
 div#formulario h1{
     text-align: center;
@@ -59,8 +63,29 @@ form > div.campo{
     width: 100%;
     height: 40px;
     background-color: #5f2c82;
+    border: 3px solid #5f2c82 ;
     border-radius: 5px;
     height: 40px;
+}
+div.campo > span{    color: white;
+    
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+div.campo > input{
+    background-color: #49a09d;
+    font-size: 1em;
+    border: 0px;
+    height: 100%;
+    width: calc(100% - 44px);
+    border-radius: 5px;
+    padding: 4px;
+    
+    transform: translateY(-15px);
+}
+div.campo > input:focus-within{
+    background-color: white;
 }
 form > div.campo > label{
     display: none;
@@ -84,7 +109,7 @@ form > div.campo > input > label{
     height: 40px; 
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 1em;
     cursor: pointer;   
  }
@@ -98,7 +123,7 @@ form > a.botao{
     margin: auto;
     border: 2px solid #49a09d;
     margin: 5px 0px 5px 0px;
-    width: 100%; border-radius: 10px;
+    width: 100%; border-radius: 5px;
     text-decoration: none;
     color: black;
     text-align: center;
